@@ -2,11 +2,13 @@ body {
   background-color: #ffb6c1;
   margin: 0;
 }
+
 .head4 {
   border-bottom: solid black;
   background-color: #fff4b6;
   text-align: center;
 }
+
 .navMain4 {
   padding: 2.5% 0;
   width: 100%;
@@ -16,26 +18,28 @@ body {
     Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
   font-size: 20px;
 }
+
 .logo1 {
   width: 20%;
-  height: 20%;
+  height: 23%;
 }
 .logo2 {
   width: 21%;
-  height: 20%;
+  height: 24%;
 }
 .logo3 {
   width: 30%;
-  height: 8%;
+  height: 11%;
 }
 .logo4 {
   width: 20%;
-  height: 20%;
+  height: 25%;
 }
 .logo5 {
   width: 20%;
-  height: 20%;
+  height: 26%;
 }
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,46 +61,49 @@ body {
   border-radius: 20px;
   text-align: center;
 }
+
 .project1 {
   width: 80%;
-  height: 84%;
+  height: 88%;
   margin: 13% 0 0 10%;
   padding-bottom: 3%;
 }
 .project2 {
   width: 80%;
-  height: 84%;
+  height: 88%;
   margin: 13% 0 0 11%;
 }
 .project3 {
   width: 80%;
-  height: 84%;
+  height: 88%;
   margin: 13% 0 0 10%;
 }
 .project4 {
   width: 53%;
-  height: 77%;
+  height: 81%;
   margin: 13% 0 0 40%;
   padding-bottom: 1%;
 }
 .project5 {
   width: 53%;
-  height: 77%;
+  height: 81%;
   margin: 13% 0 0 10%;
 }
 
 h1 {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 35px;
+  font-size: 25px;
   margin: 5% 0 3% 0;
   transition: all 0.3s ease;
 }
+
 p {
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman",
     serif;
-  font-size: 17px;
+  font-size: 14px;
   margin: 0 10%;
 }
+
 .link {
   all: unset;
   color: blue;
@@ -105,10 +112,12 @@ p {
   font-weight: bolder;
   text-align: center;
 }
+
 .link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 a {
   background-color: #b6c1ff;
   text-decoration: none;
@@ -123,16 +132,19 @@ a {
   transition: transform 0.2s;
   box-shadow: 3px 3px 3px 3px black;
 }
+
 a:hover {
   font-family: Papyrus, fantasy;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px #fff4b6, 0 0 5px #ffd900;
   transform: scale(1.1);
 }
+
 h1:hover {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px #687eff, 0 0 5px #002aff;
 }
+
 .project1:hover,
 .project2:hover,
 .project3:hover,
@@ -140,6 +152,10 @@ h1:hover {
 .project5:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+
+img {
+  margin: 3%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -195,73 +211,307 @@ h1:hover {
     height: 20%;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 850px) and (max-width: 1023px) {
+  .navMain4 {
+    font-size: 19px;
+  }
+  .link,
+  .link:hover {
+    font-size: 15px;
+  }
+  .logo1 {
+    height: 18%;
+  }
+  .logo2,
+  .logo5 {
+    height: 19%;
+  }
+  .logo3 {
+    height: 10%;
+  }
+  .logo4 {
+    height: 18%;
+  }
+  .projects,
+  .projects2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .project3 {
+    margin-right: -110%;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    width: 70%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 10%;
+    padding-bottom: 4%;
+  }
+  h1,
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
+    margin: 0 5%;
+    padding-top: 5%;
+  }
+  a {
+    width: 18%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 849px) {
+  .navMain4 {
+    font-size: 18px;
+  }
+  .link,
+  .link:hover {
+    font-size: 14px;
+  }
+  .logo1 {
+    height: 18%;
+  }
+  .logo2,
+  .logo5 {
+    height: 19%;
+  }
+  .logo4 {
+    height: 17%;
+  }
+  .logo3 {
+    height: 10%;
+  }
+  .projects,
+  .projects2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    justify-items: center;
+  }
+  .project3 {
+    margin-right: -100%;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    width: 72%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 10%;
+    padding-bottom: 4%;
+  }
+  h1 {
+    font-size: 23px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 5%;
+    padding-top: 5%;
+  }
+  a {
+    width: 18%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .navMain4 {
+    font-size: 17px;
+    padding: 3% 0;
+  }
+  .link,
+  .link:hover {
+    font-size: 14px;
+  }
+  .logo1 {
+    height: 13%;
+  }
+  .logo2,
+  .logo5 {
+    height: 15%;
+  }
+  .logo4 {
+    height: 14%;
+  }
+  .logo3 {
+    height: 7%;
+  }
+  .projects,
+  .projects2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .project3 {
+    margin-right: -110%;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    width: 70%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 10%;
+    padding-bottom: 4%;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 5%;
+    padding-top: 5%;
+  }
+  a {
+    width: 22%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .navMain4 {
+    font-size: 16px;
+  }
+  .link,
+  .link:hover {
+    font-size: 14px;
+  }
+  .logo1 {
+    height: 13%;
+  }
+  .logo2,
+  .logo5 {
+    height: 14%;
+  }
+  .logo4 {
+    height: 13%;
+  }
+  .logo3 {
+    height: 6%;
+  }
+  .projects,
+  .projects2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .project3 {
+    margin-right: -110%;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    width: 70%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 10%;
+    padding-bottom: 4%;
+  }
+  h1 {
+    font-size: 18px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    margin: 0 5%;
+    padding-top: 5%;
+  }
+  a {
+    width: 20%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 500px) {
   .navMain4 {
     font-size: 15px;
-    padding-bottom: 3%;
   }
   .link,
   .link:hover {
     font-size: 13px;
   }
   .logo1 {
-    height: 11%;
+    height: 23%;
   }
-  .logo2 {
-    height: 12%;
-  }
-  .logo3 {
-    height: 6%;
+  .logo2,
+  .logo5 {
+    height: 25%;
   }
   .logo4 {
-    height: 11%;
+    height: 23%;
   }
-  .logo5 {
-    height: 12%;
+  .logo3 {
+    height: 10%;
+  }
+  .projects,
+  .projects2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   .project1,
   .project2,
-  .project3 {
-    width: 77%;
-    height: 91%;
-  }
-  .project1 {
-    margin-left: 15%;
-  }
-  .project2 {
-    margin-left: 12%;
-  }
-  .project3 {
-    margin-left: 8%;
-    margin-bottom: 6%;
-  }
+  .project3,
   .project4,
   .project5 {
-    width: 52%;
-    height: 83%;
-  }
-  .project4 {
-    margin-left: 35%;
-  }
-  .project5 {
-    margin-left: 15%;
+    width: 75%;
+    height: auto;
+    margin-left: 12.5%;
+    margin-top: 12%;
+    padding-bottom: 5%;
   }
   h1 {
-    font-size: 20px;
-    margin-left: 0.3%;
+    font-size: 18px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: center;
   }
   p {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0 5%;
-    padding-top: 7%;
+    padding-top: 5%;
+  }
+  a {
+    width: 18%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px black;
   }
 }
+
 @media screen and (max-width: 376px) {
   .navMain4 {
     font-size: 13px;
     padding: 4.5% 0;
   }
-
   .logo1 {
     height: 15%;
   }
@@ -277,7 +527,6 @@ h1:hover {
   .logo5 {
     height: 17%;
   }
-
   .projects,
   .projects2 {
     grid-template-columns: 1fr;
