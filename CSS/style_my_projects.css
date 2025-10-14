@@ -330,6 +330,69 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navMain4 {
+    font-size: 15px;
+    padding-bottom: 3%;
+  }
+
+  .link,
+  .link:hover {
+    font-size: 13px;
+  }
+
+  .logo1 {
+    height: 11%;
+  }
+  .logo2 {
+    height: 12%;
+  }
+  .logo3 {
+    height: 6%;
+  }
+  .logo4 {
+    height: 11%;
+  }
+  .logo5 {
+    height: 12%;
+  }
+
+  .project1,
+  .project2,
+  .project3 {
+    width: 77%;
+    height: 91%;
+    margin-left: 12%;
+  }
+
+  .project3 {
+    margin-bottom: 6%;
+  }
+
+  .project4,
+  .project5 {
+    width: 52%;
+    height: 83%;
+  }
+  .project4 {
+    margin-left: 35%;
+  }
+  .project5 {
+    margin-left: 15%;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-left: 0.3%;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 0 5%;
+    padding-top: 7%;
+  }
+}
+
 @media screen and (min-width: 601px) and (max-width: 767px) {
   .navMain4 {
     font-size: 17px;
