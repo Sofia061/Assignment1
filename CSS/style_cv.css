@@ -9,16 +9,6 @@ body {
   text-align: center;
 }
 
-.navMain3 {
-  padding: 2.5% 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
-    Palatino, serif;
-  font-size: 20px;
-}
-
 .portfolio {
   float: right;
   width: 30%;
@@ -65,27 +55,6 @@ h2 {
   transition: all 0.3s ease;
 }
 
-a {
-  background-color: #b6c1ff;
-  text-decoration: none;
-  color: black;
-  padding: 1%;
-  text-align: center;
-  display: inline-block;
-  width: 10%;
-  border: solid #b6c1ff;
-  border-radius: 20px;
-  transition: transform 0.2s;
-  box-shadow: 3px 3px 3px black;
-}
-
-a:hover {
-  font-family: Papyrus, fantasy;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #fff4b6, 0 0 5px #ffd900;
-  transform: scale(1.1);
-}
-
 h1:hover,
 h2:hover {
   color: white;
@@ -95,27 +64,31 @@ h2:hover {
 .volunteer {
   margin-bottom: 2%;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .portfolio {
     margin-right: 5%;
     margin-top: 10%;
   }
 
-  a {
-    width: 13%;
-    height: 40%;
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  ul {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navMain3 {
-    padding-bottom: 3%;
-    font-size: 15px;
-  }
-
+@media screen and (min-width: 427px) and (max-width: 768px) {
   .portfolio {
     margin-top: 10%;
+    margin-left: 7%;
+    width: 45%;
   }
 
   h1 {
@@ -123,39 +96,63 @@ h2:hover {
   }
 
   .date {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   p,
   ul {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   h2 {
     font-size: 20px;
   }
-
-  a {
-    width: 13%;
-    height: 20%;
-  }
 }
 
-@media screen and (max-width: 376px) {
-  .navMain3 {
-    padding: 4.5% 0;
-    font-size: 13px;
-  }
-
+@media screen and (min-width: 377px) and (max-width: 426px) {
   .portfolio {
-    width: 90%;
-    margin: 5%;
+    width: 80%;
+    margin: 5% auto;
     float: none;
     display: block;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 38px;
+    margin: 6% 0 2%;
+    text-align: center;
+  }
+
+  #info {
+    margin: 3% 5% 6%;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 5%;
+  }
+
+  h2 {
+    font-size: 19px;
+    margin: 5%;
+  }
+
+  ul {
+    font-size: 14px;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .portfolio {
+    width: 80%;
+    margin: 10%;
+    float: none;
+    display: block;
+  }
+
+  h1 {
+    font-size: 35px;
     margin: 8% 0 1%;
     text-align: center;
   }
@@ -170,18 +167,12 @@ h2:hover {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 5%;
   }
 
   ul {
     font-size: 13px;
-    margin-left: 1.5%;
-  }
-
-  a {
-    width: 20%;
-    height: 20%;
-    box-shadow: 1.5px 1.5px 1.5px black;
+    margin-left: 4%;
   }
 }

@@ -9,16 +9,6 @@ body {
   text-align: center;
 }
 
-.navMain {
-  padding: 2.5% 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
-    Palatino, serif;
-  font-size: 20px;
-}
-
 .main_information {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,27 +28,6 @@ p {
   margin-right: 15%;
 }
 
-a {
-  background-color: #b6c1ff;
-  text-decoration: none;
-  color: black;
-  padding: 1%;
-  text-align: center;
-  display: inline-block;
-  width: 10%;
-  border: solid #b6c1ff;
-  border-radius: 20px;
-  transition: transform 0.2s;
-  box-shadow: 3px 3px 3px black;
-}
-
-a:hover {
-  font-family: Papyrus, fantasy;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #fff4b6, 0 0 5px #ffd900;
-  transform: scale(1.1);
-}
-
 h1:hover {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px #687eff, 0 0 5px #002aff;
@@ -68,16 +37,11 @@ h1:hover {
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   h1 {
     font-size: 60px;
     margin-top: 30%;
     margin-right: 4%;
-  }
-
-  a {
-    width: 13%;
-    height: 40%;
   }
 
   .gif {
@@ -85,12 +49,7 @@ h1:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navMain {
-    padding-bottom: 3%;
-    font-size: 15px;
-  }
-
+@media screen and (min-width: 427px) and (max-width: 768px) {
   h1 {
     font-size: 50px;
     margin-top: 25%;
@@ -100,22 +59,27 @@ h1:hover {
     font-size: 18px;
   }
 
-  a {
-    width: 13%;
-    height: 20%;
-  }
-
   .gif {
     margin-top: 17%;
   }
 }
 
-@media screen and (max-width: 376px) {
-  .navMain {
-    padding: 4.5% 0;
-    font-size: 13px;
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 22%;
   }
 
+  p {
+    font-size: 17px;
+  }
+
+  .gif {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 376px) {
   .main_information {
     grid-template-columns: 1fr;
   }
@@ -130,11 +94,5 @@ h1:hover {
     font-size: 16px;
     margin-right: 10%;
     padding: 0 10% 10% 10%;
-  }
-
-  a {
-    width: 20%;
-    height: 20%;
-    box-shadow: 1.5px 1.5px 1.5px black;
   }
 }

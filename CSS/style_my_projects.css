@@ -9,16 +9,6 @@ body {
   text-align: center;
 }
 
-.navMain4 {
-  padding: 2.5% 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
-    Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 20px;
-}
-
 .logo1 {
   width: 20%;
   height: 23%;
@@ -43,12 +33,13 @@ body {
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 .projects2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 5%;
-  justify-self: center;
+  justify-items: center;
 }
 
 .project1,
@@ -60,6 +51,7 @@ body {
   border: solid black;
   border-radius: 20px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project1 {
@@ -90,11 +82,25 @@ body {
   margin: 13% 0 0 10%;
 }
 
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+  transform: scale(1.1);
+}
+
 h1 {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-size: 25px;
   margin: 5% 0 3% 0;
   transition: all 0.3s ease;
+  text-align: center;
+}
+
+h1:hover {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px #687eff, 0 0 5px #002aff;
 }
 
 p {
@@ -118,108 +124,11 @@ p {
   cursor: pointer;
 }
 
-a {
-  background-color: #b6c1ff;
-  text-decoration: none;
-  color: black;
-  padding: 1%;
-  text-align: center;
-  display: inline-block;
-  width: 10%;
-  height: 30%;
-  border: solid #b6c1ff;
-  border-radius: 20px;
-  transition: transform 0.2s;
-  box-shadow: 3px 3px 3px 3px black;
-}
-
-a:hover {
-  font-family: Papyrus, fantasy;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #fff4b6, 0 0 5px #ffd900;
-  transform: scale(1.1);
-}
-
-h1:hover {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #687eff, 0 0 5px #002aff;
-}
-
-.project1:hover,
-.project2:hover,
-.project3:hover,
-.project4:hover,
-.project5:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
 img {
   margin: 3%;
 }
 
-@media screen and (max-width: 1024px) {
-  .navMain4 {
-    font-size: 20px;
-  }
-  .logo1 {
-    height: 13%;
-  }
-  .logo2 {
-    height: 13%;
-  }
-  .logo3 {
-    height: 6%;
-  }
-  .logo4,
-  .logo5 {
-    height: 13%;
-  }
-  .project1 {
-    width: 70%;
-    margin-left: 20%;
-    height: 90%;
-  }
-  .project2 {
-    width: 70%;
-    margin-left: 15%;
-    height: 90%;
-  }
-  .project3 {
-    width: 70%;
-    margin-left: 10%;
-    height: 90%;
-  }
-  .project4,
-  .project5 {
-    width: 47.5%;
-    height: 84%;
-    margin-bottom: 7%;
-  }
-  h1 {
-    font-size: 25px;
-    margin-top: 7%;
-    margin-bottom: 7%;
-  }
-  p {
-    font-size: 15px;
-    margin: 0 3%;
-    padding-top: 5%;
-  }
-  a {
-    width: 13%;
-    height: 20%;
-  }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1023px) {
-  .navMain4 {
-    font-size: 19px;
-  }
-  .link,
-  .link:hover {
-    font-size: 15px;
-  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .logo1 {
     height: 18%;
   }
@@ -229,76 +138,19 @@ img {
   }
   .logo3 {
     height: 10%;
-  }
-  .logo4 {
-    height: 18%;
-  }
-  .projects,
-  .projects2 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-  }
-  .project3 {
-    margin-right: -110%;
-  }
-  .project1,
-  .project2,
-  .project3,
-  .project4,
-  .project5 {
-    width: 70%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: 10%;
-    padding-bottom: 4%;
-  }
-  h1,
-  p {
-    text-align: center;
-  }
-  p {
-    font-size: 16px;
-    margin: 0 5%;
-    padding-top: 5%;
-  }
-  a {
-    width: 18%;
-    height: auto;
-    padding: 2%;
-    box-shadow: 2px 2px 2px 2px black;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 849px) {
-  .navMain4 {
-    font-size: 18px;
-  }
-  .link,
-  .link:hover {
-    font-size: 14px;
-  }
-  .logo1 {
-    height: 18%;
-  }
-  .logo2,
-  .logo5 {
-    height: 19%;
   }
   .logo4 {
     height: 17%;
   }
-  .logo3 {
-    height: 10%;
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 18px;
   }
-  .projects,
   .projects2 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
     justify-items: center;
-  }
-  .project3 {
-    margin-right: -100%;
+    gap: 18px;
   }
   .project1,
   .project2,
@@ -313,34 +165,14 @@ img {
   }
   h1 {
     font-size: 23px;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    text-align: center;
   }
   p {
     font-size: 15px;
     margin: 0 5%;
-    padding-top: 5%;
-  }
-  a {
-    width: 18%;
-    height: auto;
-    padding: 2%;
-    box-shadow: 2px 2px 2px 2px black;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navMain4 {
-    font-size: 15px;
-    padding-bottom: 3%;
-  }
-
-  .link,
-  .link:hover {
-    font-size: 13px;
-  }
-
+@media screen and (min-width: 427px) and (max-width: 768px) {
   .logo1 {
     height: 11%;
   }
@@ -356,7 +188,16 @@ img {
   .logo5 {
     height: 12%;
   }
-
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+  .projects2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
   .project1,
   .project2,
   .project3 {
@@ -364,11 +205,6 @@ img {
     height: 91%;
     margin-left: 12%;
   }
-
-  .project3 {
-    margin-bottom: 6%;
-  }
-
   .project4,
   .project5 {
     width: 52%;
@@ -380,12 +216,9 @@ img {
   .project5 {
     margin-left: 15%;
   }
-
   h1 {
     font-size: 20px;
-    margin-left: 0.3%;
   }
-
   p {
     font-size: 13px;
     margin: 0 5%;
@@ -393,135 +226,7 @@ img {
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 767px) {
-  .navMain4 {
-    font-size: 17px;
-    padding: 3% 0;
-  }
-  .link,
-  .link:hover {
-    font-size: 14px;
-  }
-  .logo1 {
-    height: 13%;
-  }
-  .logo2,
-  .logo5 {
-    height: 15%;
-  }
-  .logo4 {
-    height: 14%;
-  }
-  .logo3 {
-    height: 7%;
-  }
-  .projects,
-  .projects2 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-  }
-  .project3 {
-    margin-right: -110%;
-  }
-  .project1,
-  .project2,
-  .project3,
-  .project4,
-  .project5 {
-    width: 70%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: 10%;
-    padding-bottom: 4%;
-  }
-  h1 {
-    font-size: 20px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    text-align: center;
-  }
-  p {
-    font-size: 15px;
-    margin: 0 5%;
-    padding-top: 5%;
-  }
-  a {
-    width: 22%;
-    height: auto;
-    padding: 2%;
-    box-shadow: 2px 2px 2px 2px black;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 600px) {
-  .navMain4 {
-    font-size: 16px;
-  }
-  .link,
-  .link:hover {
-    font-size: 14px;
-  }
-  .logo1 {
-    height: 13%;
-  }
-  .logo2,
-  .logo5 {
-    height: 14%;
-  }
-  .logo4 {
-    height: 13%;
-  }
-  .logo3 {
-    height: 6%;
-  }
-  .projects,
-  .projects2 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-  }
-  .project3 {
-    margin-right: -110%;
-  }
-  .project1,
-  .project2,
-  .project3,
-  .project4,
-  .project5 {
-    width: 70%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: 10%;
-    padding-bottom: 4%;
-  }
-  h1 {
-    font-size: 18px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    text-align: center;
-  }
-  p {
-    font-size: 14px;
-    margin: 0 5%;
-    padding-top: 5%;
-  }
-  a {
-    width: 20%;
-    height: auto;
-    padding: 2%;
-    box-shadow: 2px 2px 2px 2px black;
-  }
-}
-
-@media screen and (min-width: 377px) and (max-width: 500px) {
-  .navMain4 {
-    font-size: 15px;
-  }
-  .link,
-  .link:hover {
-    font-size: 13px;
-  }
+@media screen and (min-width: 377px) and (max-width: 426px) {
   .logo1 {
     height: 23%;
   }
@@ -553,28 +258,15 @@ img {
   }
   h1 {
     font-size: 18px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    text-align: center;
   }
   p {
     font-size: 14px;
     margin: 0 5%;
     padding-top: 5%;
   }
-  a {
-    width: 18%;
-    height: auto;
-    padding: 2%;
-    box-shadow: 2px 2px 2px 2px black;
-  }
 }
 
 @media screen and (max-width: 376px) {
-  .navMain4 {
-    font-size: 13px;
-    padding: 4.5% 0;
-  }
   .logo1 {
     height: 15%;
   }
@@ -603,9 +295,5 @@ img {
     height: 90%;
     margin-left: 15%;
     margin-top: 13%;
-  }
-  a {
-    width: 20%;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px black;
   }
 }

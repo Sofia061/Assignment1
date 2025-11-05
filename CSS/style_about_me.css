@@ -9,16 +9,6 @@ body {
   text-align: center;
 }
 
-.navMain2 {
-  padding: 2.5% 0 3%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
-    Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 20px;
-}
-
 .about_me {
   background-color: #b6fff4;
   width: 75%;
@@ -44,27 +34,6 @@ p {
   margin: 5%;
 }
 
-a {
-  background-color: #b6c1ff;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  width: 10%;
-  border: solid #b6c1ff;
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 1%;
-  transition: transform 0.2s;
-}
-
-a:hover {
-  font-family: Papyrus, fantasy;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #fff4b6, 0 0 5px #ffd900;
-  transform: scale(1.1);
-}
-
 h1:hover {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px #687eff, 0 0 5px #002aff;
@@ -74,58 +43,70 @@ h1:hover {
   box-shadow: 0 0 15px #000;
 }
 
-@media screen and (max-width: 1024px) {
-  .navMain2 {
-    font-size: 20px;
-    padding-bottom: 2.5%;
-  }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .about_me {
     width: 80%;
     height: 140%;
-    margin: 11% 10% 3%;
+    margin: 8% 10% 3%;
   }
+
   h1 {
-    font-size: 60px;
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 19px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navMain2 {
-    font-size: 15px;
-  }
+@media screen and (min-width: 427px) and (max-width: 768px) {
   .about_me {
-    width: 80%;
+    width: 85%;
     height: 140%;
-    margin: 4% 10%;
+    margin: 6% auto;
   }
+
   h1 {
-    font-size: 50px;
+    font-size: 48px;
   }
+
   p {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 376px) {
-  .navMain2 {
-    font-size: 13px;
-    padding: 4.5% 0;
-  }
+@media screen and (min-width: 377px) and (max-width: 426px) {
   .about_me {
-    width: 80%;
+    width: 85%;
     height: 140%;
-    margin: 10% 10% 35px;
+    margin: 8% auto 30px;
   }
+
   h1 {
-    font-size: 40px;
+    font-size: 42px;
+    margin-top: 8%;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 8%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .about_me {
+    width: 85%;
+    height: 140%;
+    margin: 10% auto 35px;
+  }
+
+  h1 {
+    font-size: 38px;
     margin-top: 10%;
   }
+
   p {
     font-size: 13px;
     margin: 10%;
-  }
-  a {
-    width: 20%;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px black;
   }
 }
