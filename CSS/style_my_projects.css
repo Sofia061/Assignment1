@@ -73,13 +73,13 @@ body {
 .project4 {
   width: 53%;
   height: 81%;
-  margin: 13% 0 0 40%;
+  margin: 13% 0 0 15%;
   padding-bottom: 1%;
 }
 .project5 {
   width: 53%;
   height: 81%;
-  margin: 13% 0 0 10%;
+  margin: 13% 0 0 0;
 }
 
 .project1:hover,
@@ -130,17 +130,17 @@ img {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .logo1 {
-    height: 18%;
+    height: 23%;
   }
   .logo2,
   .logo5 {
-    height: 19%;
+    height: 24%;
   }
   .logo3 {
     height: 10%;
   }
   .logo4 {
-    height: 17%;
+    height: 23%;
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -163,6 +163,11 @@ img {
     margin-top: 10%;
     padding-bottom: 4%;
   }
+
+  .project3 {
+    margin-left: 105%;
+  }
+
   h1 {
     font-size: 23px;
   }
@@ -174,19 +179,19 @@ img {
 
 @media screen and (min-width: 427px) and (max-width: 768px) {
   .logo1 {
-    height: 11%;
+    height: 15%;
   }
   .logo2 {
-    height: 12%;
+    height: 17%;
   }
   .logo3 {
-    height: 6%;
+    height: 8%;
   }
   .logo4 {
-    height: 11%;
+    height: 16%;
   }
   .logo5 {
-    height: 12%;
+    height: 18%;
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -200,24 +205,22 @@ img {
   }
   .project1,
   .project2,
-  .project3 {
+  .project3,
+  .project4,
+  .project5 {
     width: 77%;
     height: 91%;
-    margin-left: 12%;
+    margin-right: 12%;
   }
   .project4,
   .project5 {
-    width: 52%;
-    height: 83%;
+    margin-left: 12%;
   }
-  .project4 {
-    margin-left: 35%;
-  }
-  .project5 {
-    margin-left: 15%;
+  .project3 {
+    margin-left: 105%;
   }
   h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   p {
     font-size: 13px;
@@ -252,9 +255,13 @@ img {
   .project5 {
     width: 75%;
     height: auto;
-    margin-left: 12.5%;
+    margin-left: 12%;
     margin-top: 12%;
     padding-bottom: 5%;
+  }
+  .project4,
+  .project5 {
+    margin-right: 12%;
   }
   h1 {
     font-size: 18px;
@@ -268,10 +275,10 @@ img {
 
 @media screen and (max-width: 376px) {
   .logo1 {
-    height: 15%;
+    height: 14%;
   }
   .logo2 {
-    height: 19%;
+    height: 17%;
   }
   .logo3 {
     height: 8%;
@@ -295,5 +302,17 @@ img {
     height: 90%;
     margin-left: 15%;
     margin-top: 13%;
+  }
+  .project4,
+  .project5 {
+    margin-right: 15%;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+    margin: 0 5%;
+    padding-top: 5%;
   }
 }

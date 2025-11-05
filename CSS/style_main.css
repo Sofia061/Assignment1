@@ -40,12 +40,12 @@ h1:hover {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   h1 {
     font-size: 60px;
-    margin-top: 30%;
+    margin-top: 15%;
     margin-right: 4%;
   }
 
   .gif {
-    margin-top: 20%;
+    margin-top: 7%;
   }
 }
 
@@ -67,7 +67,7 @@ h1:hover {
 @media screen and (min-width: 377px) and (max-width: 426px) {
   h1 {
     font-size: 40px;
-    margin-top: 22%;
+    margin-top: 45%;
   }
 
   p {
@@ -75,7 +75,7 @@ h1:hover {
   }
 
   .gif {
-    margin-top: 15%;
+    margin-top: 45%;
   }
 }
 
@@ -86,7 +86,7 @@ h1:hover {
 
   h1 {
     font-size: 25px;
-    margin-top: 20%;
+    margin-top: 5%;
     padding-left: 10%;
   }
 
